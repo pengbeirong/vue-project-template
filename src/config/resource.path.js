@@ -1,0 +1,1 @@
+export const BASE_API = 'http://xxx.xxx.xxx/' // 请求接口
