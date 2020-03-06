@@ -14,18 +14,6 @@ npm run dev
 # build for production with minification
 npm run build
 
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
-
 # build for production with deploy（部署测试环境）
 npm run deploy:dev
 
@@ -41,12 +29,6 @@ https://doc.vux.li/zh-CN/
 
 vue-router:
 https://router.vuejs.org/zh/
-
-
-开发模式下  模拟数据与接口数据的转换
-config>>dev.env.js
-接口： ENV_CONFIG_REMOTE: '"1"', BASE_API: '"/api"',
-模拟数据： ENV_CONFIG_REMOTE: '"0"', BASE_API: '"/static/data/"'
 
 接口代理配置
 config>>index.js  proxyTable 参数
