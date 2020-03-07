@@ -1,8 +1,10 @@
 <template>
-    <div id="app" class="view-box-container">
-        <transition>
-            <router-view></router-view>
-        </transition>
+    <div id="app">
+        <div id="nav">
+            <router-link to="/">Home</router-link>|
+            <router-link to="/about">About</router-link>
+        </div>
+        <router-view></router-view>
     </div>
 </template>
 
@@ -13,7 +15,7 @@ export default {
     name: "app",
     computed: {
         ...mapState({
-            isLoading: state => state.isLoading,
+            isLoading: state => state.isLoading
         })
     }
 }
@@ -22,8 +24,4 @@ export default {
 <style lang="less">
 @import "~vux/src/styles/reset.less";
 @import "./assets/less/main.less";
-
-.weui-tab__panel {
-    padding-bottom: 0px !important;
-}
 </style>
